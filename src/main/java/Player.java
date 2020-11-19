@@ -16,11 +16,6 @@ public class Player {
     public void addCard(Card card) {
         this.hand.add(card);
         }
-
-    public void dealCard(card){
-        card = deck.removeCard(0);
-        this.hand.add(card);
-    }
 }
 
 

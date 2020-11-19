@@ -51,8 +51,7 @@ public class DeckTest {
      public void canDealCard() {
          deck.createDeck();
          deck.shuffleDeck();
-         deck.removeCard(0);
-         player.dealCard(0);
+         deck.dealCard();
          assertEquals(1, player.checkHand());
          assertEquals(51, deck.getDeckSize());
          }

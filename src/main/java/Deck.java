@@ -42,7 +42,11 @@ public class Deck {
     }
 
     public void removeCard(int index) {
-         this.deck.remove(index);
-         }
+        this.deck.remove(index);
+    }
+
+    public Card dealCard(){
+       return this.deck.remove(0);
+    }
 
 }
