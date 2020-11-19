@@ -16,7 +16,15 @@ public class Card {
         return this.rank;
     }
 
-    public int getRankValue(){
+    public int getRankValue() {
         return this.rank.getValue();
     }
+    
+    public String toString() {
+        return this.rank + " of " + this.suit;
+        }
+
+//    public void addCardToDeck(Card card) {
+//        this.deck
+//    }
 }
