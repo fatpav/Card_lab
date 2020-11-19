@@ -9,11 +9,21 @@ public class CardTest {
 
     @Before
     public void before(){
-        playingCard = new Card(SuitType.HEARTS);
+        playingCard = new Card(SuitType.HEARTS, CardRank.SIX);
     }
 
     @Test
     public void cardHasSuit(){
         assertEquals(SuitType.HEARTS, playingCard.getSuit());
     }
+
+    @Test
+    public void cardHasValue() {
+        assertEquals(6, playingCard.getRankValue());
+        }
+
+    @Test
+    public void cardHasRank() {
+        assertEquals(CardRank.SIX, playingCard.getRank());
+        }
 }
